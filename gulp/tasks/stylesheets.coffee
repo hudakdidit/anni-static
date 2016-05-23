@@ -14,6 +14,7 @@ gulp.task "stylesheets", ->
   gulp.src ["#{config.sourcePath}/#{config.cssDirectory}/#{config.cssMainFile}.styl"]
     .pipe plugins.plumber()
     .pipe plugins.stylus
+      'include css': true
       sourcemap:
         inline: config.development
     .pipe plugins.sourcemaps.init
