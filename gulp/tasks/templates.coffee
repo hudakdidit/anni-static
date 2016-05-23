@@ -12,7 +12,7 @@ config    = require "../config.coffee"
 #--------------------------------------------------------
 
 gulp.task "templates", (callback) ->
-  gulp.src "#{config.sourcePath}/#{config.templateDirectory}/**/*.jade"
+  gulp.src "#{config.sourcePath}/#{config.templateDirectory}/**/index.jade"
     .pipe plugins.consolidate("jade")
     .pipe(plugins.rename((path) ->
       path.extname = ".html"

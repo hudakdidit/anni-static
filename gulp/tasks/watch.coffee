@@ -20,7 +20,7 @@ gulp.task "watch", ->
 
   plugins.livereload.listen()
 
-  gulp.watch "#{config.publicPath}/**/*", (e) ->
+  gulp.watch ["#{config.publicPath}/assets/**/*", "./index.html"], (e) ->
     plugins.livereload.changed(e.path)
 
   return

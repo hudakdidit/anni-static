@@ -14,10 +14,10 @@ Config = ->
   @sourcePath = "source"
 
   # Compile path
-  @outputPath = "public/assets"
+  @outputPath = "./assets"
 
   # Public directory
-  @publicPath = "public"
+  @publicPath = "./"
 
   # Test path
   @testPath = "test"
